@@ -13,12 +13,12 @@
         <scene sceneID="3rh-8h-oM8">
             <objects>
                 <tableViewController id="Z84-he-g4B" customClass="SettingsTableViewController" customModule="Settings" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Exk-rk-dHD">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Exk-rk-dHD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="133" id="hQW-TI-cEM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="133" id="hQW-TI-cEM" customClass="SettingTableViewCell" customModule="Settings" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="133"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQW-TI-cEM" id="Im9-DT-sg0">
@@ -53,6 +53,11 @@
                                         <constraint firstItem="wJF-nQ-Y6E" firstAttribute="leading" secondItem="ic1-2S-P9j" secondAttribute="trailing" constant="8" id="jho-82-5Pv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="settingImageView" destination="ic1-2S-P9j" id="wWS-a0-Cle"/>
+                                    <outlet property="settingNameLabel" destination="tc8-d9-uZU" id="8sO-ei-D3z"/>
+                                    <outlet property="settingSwitch" destination="8oO-6j-LbY" id="d0v-j4-9cw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
